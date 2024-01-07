@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose console</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary mx-4 d-flex justify-content-between"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="Assets/login-logo.png" alt="ultimate logo" />
+          <span class="logo-text" style="color: #1fbfbc">ultimate</span></a
+        >
+        <button
+          class="d-lg-none collaps-btn btn-collaps"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasResponsive"
+          aria-controls="offcanvasResponsive"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars fa-lg" style="color: #1fbfbc"></i
+          ></span>
+        </button>
+        <div
+          class="offcanvas-lg offcanvas-end offcanvas-settig"
+          tabindex="-1"
+          id="offcanvasResponsive"
+          aria-labelledby="offcanvasResponsiveLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <h3 class="logo-text" style="color: #1fbfbc">ultimate</h3>
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              data-bs-target="#offcanvasResponsive"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pricing
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item navButton">
+                <button class="nav-link">Register / Login</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="pb-5 text-white mb-5">
+        <h1 class="text-center section-title my-5">Sell to Us</h1>
+
+        <div class="d-flex flex-column flex-lg-row gap-5">
+          <form>
+            <div class="sell-info flex-grow-1">
+              <h2 class="h4 mb-4">1- Web App Information</h2>
+
+              <div
+                class="row mb-3 sell-platform d-flex flex-column flex-md-row align-items-center"
+              >
+                <label class="col-md-3 col-form-label">Platform :</label>
+
+                <ul
+                  class="d-flex flex-md-row gap-2 list-unstyled flex-grow-1 mb-0 col-md-9"
+                >
+                  <li>
+                    <button>
+                      <i
+                        class="fa-brands fa-playstation fs-2 mb-2"
+                        style="color: #0080ff"
+                      ></i>
+                      <span style="color: #0080ff">PS</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <i
+                        class="fa-brands fa-xbox fs-2 mb-2"
+                        style="color: #4caf50"
+                      >
+                      </i>
+                      <span style="color: #4caf50">Xbox</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button>
+                      <i
+                        class="fa-solid fa-display fs-2 mb-2"
+                        style="color: #1fbcb9"
+                      ></i>
+                      <span style="color: #1fbcb9">PC</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label"
+                  >Amount Of Coins For Sale :</label
+                >
+                <div class="input-group mb-3 col-md-9">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="≥ 300K (1K = 1000 Coins)"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text" id="basic-addon2">K</span>
+                </div>
+              </div>
+
+              <div class="row sell-backup mb-3">
+                <label class="col-md-3 col-form-label">Payment Time :</label>
+
+                <ul
+                  class="header col-md-9 d-flex gap-2 list-unstyled flex-grow-1"
+                >
+                  <li class="btn0 activebtn">slow/2 days</li>
+                  <li class="btn0 inactive">mid /1 day</li>
+                  <li class="btn0 inactive">fast/ 6 hours</li>
+                </ul>
+              </div>
+
+              <div class="row mb-4">
+                <label class="col-md-3 col-form-label"
+                  >Estimated Income :</label
+                >
+
+                <div class="estmaid-income d-flex col-md-9">
+                  <div class="d-flex flex-grow-1 align-items-center col-md-4">
+                    <span class="fw-bold fs-4">$18.00</span>
+                    <small class="text-center">/ Payment in 2 Days</small>
+                  </div>
+
+                  <div
+                    class="signup-select d-flex align-items-center sell-select p-2"
+                  >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>usd</option>
+                      <option value="egp">egp</option>
+                      <option value="eur">eur</option>
+                    </select>
+
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="0.056"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                      />
+                      <span class="input-group-text" id="basic-addon2">K</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label">WebApp Email :</label>
+
+                <input
+                  class="col-md-9"
+                  type="email"
+                  id="sellEmail"
+                  required
+                  placeholder=".."
+                />
+              </div>
+
+              <div class="row mb-3">
+                <label class="col-md-3 col-form-label">WebApp Password :</label>
+
+                <input
+                  class="col-md-9"
+                  type="password"
+                  id="sellPassword"
+                  required
+                  placeholder=".."
+                />
+              </div>
+
+              <div class="row sell-backup">
+                <label class="col-md-3 col-form-label">Backup Code :</label>
+                <div class="d-flex flex-column col-md-9">
+                  <div
+                    class="code-input list-unstyled gap-2 d-flex justify-content-between mb-3"
+                  >
+                    <input placeholder="..." />
+                    <input placeholder="..." />
+                    <input placeholder="..." />
+                  </div>
+                  <div
+                    class="code-input list-unstyled gap-2 d-flex justify-content-between"
+                  >
+                    <input placeholder="..." />
+                    <input placeholder="..." />
+                    <input placeholder="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <form class="sell-checkout flex-grow-1">
+            <h2 class="h4 mb-4">1- Web App Information</h2>
+
+            <div class="sell-address d-flex flex-column flex-md-row gap-3 mb-4">
+              <label class="col-md-3 col-form-label">Payment Address :</label>
+
+              <a class="text-center text-md-start">
+                +Add payment information
+              </a>
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-md-3 col-form-label">Instant contact:</label>
+
+              <input
+                class="col-md-9"
+                type="email"
+                id="sellEmail"
+                required
+                placeholder=".."
+              />
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-md-3 col-form-label">Conatct details:</label>
+
+              <input
+                class="col-md-9"
+                type="email"
+                id="sellEmail"
+                required
+                placeholder=".."
+              />
+            </div>
+
+            <div class="row mb-3">
+              <label class="col-md-3 col-form-label">Conatct email:</label>
+
+              <input
+                class="col-md-9"
+                type="email"
+                id="sellEmail"
+                required
+                placeholder=".."
+              />
+            </div>
+
+            <div class="sell-checkout-submit">
+              <button type="submit" class="login-submit mt-2 btn">
+                Checkout
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer class="general-footer text-white text-center py-4">
+      <!-- <div
+          class="login-logo d-flex justify-content-center align-items-center mt-5"
+        >
+          <img src="Assets/login-logo.png" alt="ultimate logo" />
+          <span class="logo-text">ultimate</span>
+        </div>
+  
+        <p class="">
+          We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        </p> -->
+
+      <ul
+        class="gap-4 mb-3 mb-lg-4 general-footer-social d-flex justify-content-center"
+      >
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-dribbble"></i></li>
+        <li><i class="fa-brands fa-figma"></i></li>
+        <li><i class="fa-brands fa-whatsapp"></i></li>
+      </ul>
+
+      <ul class="d-flex justify-content-center general-footer-links">
+        <div class="list-group">
+          <li class=""><a href="#">About us</a></li>
+          <li class=""><a href="#">Jobs</a></li>
+          <li class=""><a href="#">Blog</a></li>
+        </div>
+        <div class="list-group">
+          <li class=""><a href="#">Press</a></li>
+          <li class=""><a href="#">FAQ</a></li>
+          <li class=""><a href="#">Careers</a></li>
+        </div>
+        <div class="list-group">
+          <li class=""><a href="#">Contact</a></li>
+          <li class=""><a href="#">Privacy policy</a></li>
+          <li class=""><a href="#">Sitemap</a></li>
+        </div>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+
+      <div
+        class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0 mb-4 general-footer-contact"
+      >
+        <div class="d-flex gap-5 mx-4">
+          <div class="contact-phone d-flex align-items-center gap-3">
+            <i class="fa-solid fa-phone-volume fs-3"></i>
+            <div class="text-start">
+              <span class="fw-bold">Have a question?</span>
+              <br />
+              <span class="contacts">310-437-2766</span>
+            </div>
+          </div>
+
+          <div class="contact-email d-flex align-items-center gap-3">
+            <i class="fa-regular fa-envelope fs-2"></i>
+            <div class="text-start">
+              <span class="fw-bold">Contact us at</span>
+              <br />
+              <span class="contacts">unreal@outlook.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-copyRight mx-4">
+          © 2000-2021, All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="/pathtolocalcopy/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/69e9875501.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn0").click(function () {
+          $(".btn0").removeClass("activebtn").addClass("");
+          $(this).removeClass("inactive").addClass("activebtn");
+        });
+      });
+    </script>
+  </body>
+</html>
